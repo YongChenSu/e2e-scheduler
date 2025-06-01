@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 	  "lint": "eslint src",
-	  "test": "node simple-test.js"
+	  "test:e2e": "node simple-test.js"
 	},
 	"devDependencies": {
 	  "eslint": "^8.39.0",
