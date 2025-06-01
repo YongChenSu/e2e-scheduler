@@ -3,8 +3,14 @@ const puppeteer = require('puppeteer');
 const assert = require('assert');
 
 (async () => {
+  // 1. 啟動瀏覽器（非 headless 模式）
   const browser = await puppeteer.launch({
     headless: true,
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage'
+    ]
   });
   const page = await browser.newPage();
 
