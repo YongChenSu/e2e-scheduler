@@ -25,4 +25,6 @@ const assert = require('assert');
   assert.strictEqual(title, 'Example Domain', '頁面標題不符合預期！');
 
   console.log('👍 標題驗證通過！');
+
+  await browser.close();
 })();
